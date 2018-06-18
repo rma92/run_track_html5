@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Web Run Track App</title>
+  <style>
+  </style>
+</head>
+<body>
+<h1>Run Tracker</h1>
+<div id=add_run_box>
+  <table>
+  <tr>
+  <td>ID:</td>
+  <td><input type=text id=run_id value=-1> <button id="button_new_run_dlg">New</button></td>
+  </tr>
+  <tr>
+  <td>Date:</td>
+  <td><input type=date id=rundate></td>
+  </tr>
+  <tr>
+  <td>Distance:</td>
+  <td>
+  <input type=text id=distance>
+  <select id=distance_unit>
+    <option>Km</option>
+    <option>Mi</option>
+    <option>m</option>
+  </select>
+  </td>
+  </tR>
+  <tr>
+  <td>duration:</td>
+  <td>
+  <input type=text id=duration>
+  </td>
+  </tr>
+  <tr>
+  <td colspan=2>Comments:
+  <textarea id=comments></textarea>
+  </td>
+  <tr><td><button id="button_save_run_dlg">Save</button>
+  </table>
+</div><!--add/edit run-->
+<hr/>
+<div id=run_list_box>
+  <table id=run_list>
+  </table>
+</div>
+</body>
+<script src="index.js">
+</script>
+</html>
